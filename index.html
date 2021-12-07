@@ -588,32 +588,43 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form name="contanct" class="contact-form" data-netlify="true" role="form">
+            <form class="contact-form" name="contact" data-netlify="true" id="contact-form">
               <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
+                  <div class="col">
+                      <label class="form-label">First Name</label>
+                      <input type="text" name="FirstName" class="form-control" placeholder="First Name" aria-label="First Name" required>
+                  </div>
+                  <div class="col">
+                      <label class="form-label">Last Name</label>
+                      <input type="text" name="LastName" class="form-control" placeholder="Last Name" aria-label="Last Name" required>
+                  </div>
               </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+              <div class="row">
+                  <div class="col">
+                      <label class="form-label">Email</label>
+                      <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email">
+
+                  </div>
+                  <div class="col">
+                      <label class="form-label">Phone</label>
+                      <input type="tel" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
+
+                  </div>
               </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+              <div class="row mb-1">
+                  <div class="col">
+                      <label class="form-label">Subject</label>
+                      <input type="text" name="Subject" class="form-control" placeholder="Subject" aria-label="Subject">
+                  </div>
               </div>
-              <div class="my-3">
-                <div class="loading"></div>
-                <div class="error-message"></div>
-                <div class="sent-message"> Thank you!</div>
+              <div class="row">
+                  <div class="col">
+                      <label class="form-label">Message</label>
+                      <textarea type="text" name="message" class="form-control" placeholder="Message" aria-label="Message" required></textarea>
+                  </div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+              <button type="submit" class="btn btn-primary mt-2">Submit</button>
+          </form>     
           </div>
 
         </div>
